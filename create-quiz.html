@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create a Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Create a Quiz</h1>
+    <a id="home" href="index.html">Home</a>
+  </header>
+  
+  <form id="quizForm">
+    <label id="title" for="quizTitle">Quiz Title:</label>
+    <input type="text" id="quizTitle" required>
+
+    <div id="questions-container">
+      <!-- Questions will be added dynamically -->
+    </div>
+
+    <button type="button" onclick="addQuestion()">Add Question</button>
+    <button type="submit">Save Quiz</button>
+  </form>
+
+  <script src="quiz-create.js"></script>
+</body>
+</html>
